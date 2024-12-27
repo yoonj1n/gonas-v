@@ -1,0 +1,13 @@
+{
+  "dependencies": {
+    "express": "^4.21.1",
+    "forever": "^4.0.3",
+    "js-yaml": "^4.1.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.7"
+  },
+  "scripts": {
+    "forever_server": "yarn forever -a -l /home/webadmin/GONAS-V/log/server.log -m=10000 --minUpTime=1000 --spinSleepTime=1000 start server.js"
+  }
+}

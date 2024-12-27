@@ -1,0 +1,14 @@
+.appbar{
+    max-height: 3rem;
+    min-height: 3rem !important;
+}
+
+.appbar-header{
+    font-weight: 500;
+    color: lightgrey;
+}
+
+.appbar-logo{
+    height: 3rem;
+    margin-right: 0.5rem;
+}

@@ -1,0 +1,88 @@
+.map-container {
+    height: calc(var(--vh, 1vh) * 100);
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.map-container-head{
+    width: '100vw' !important;
+    flex: 1;
+    position: relative;
+    display: flex;
+}
+
+.leaflet-container {
+    background-color: #504f4f !important;
+}
+
+.leaflet-interactive{
+    cursor: grab !important;
+}
+
+/* Remove default zoom */
+.leaflet-left .leaflet-control-zoom{
+    display: none !important;
+}
+
+.map-loading{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2000;
+}
+
+.map-backdrop{
+    width: 100vw;
+    height: 100vh;
+    z-index: 1999;
+}
+
+.map-alert{
+    z-index: 3000 !important;
+}
+
+.map-colorbar{
+    position: absolute;
+    top: 6rem;
+    right: 0.2rem;
+    z-index: 2998;
+    width: 3rem;
+    height: 25rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.colorbarImg{
+    transform: rotate(90deg);
+    height: 2rem; /* 너비 */
+    width: 25rem; /* 길이 */
+    border-radius: 20px;
+    box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.5);
+}
+
+.map-colorbar-num-wrapper{
+    position: inherit;
+    z-index: 2999;
+    display: flex;
+    flex-direction: column;
+    height: 95%;
+    /* justify-content:space-around; */
+    justify-content:space-between;
+    /* margin-top: 0.5rem; */
+    /* margin-bottom: 0.5rem; */
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    align-items: center;
+}
+
+.map-colorbar-num{
+    font-family: 'Pretendard' !important;
+    font-size: 0.8rem;
+    margin:0;
+    color: white;
+    text-shadow: 0 0 3px rgba(0,0,0,0.7);
+}

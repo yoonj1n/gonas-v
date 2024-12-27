@@ -1,0 +1,60 @@
+.ML-contents-datalist{
+    /* margin-left: 0.5rem; */
+    flex: 1;
+    /* height: 100%; */
+    padding: 1rem;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: flex-start;
+}
+
+.ML-contents-card{
+    flex: 0 0 auto;
+    max-width: 15rem;
+    height: 17rem;
+    margin: 0.4rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease !important;
+    background-color: rgba(255, 255, 255, 0.5) !important;
+    vertical-align: top; /* 상단 정렬 */
+
+}
+
+.ML-contents-card:hover {
+    transform: scale(1.02);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+}
+
+.ML-contents-card-header{
+    color: #333333;
+    font-weight: 500;
+    font-size: 1rem;
+    
+}
+
+.ML-contents-card-title{
+    font-weight: 600;
+    font-size:1.2rem;
+    margin:0;
+}
+
+.ML-contents-card-description{
+    font-weight: 200;
+    color:rgb(56, 56, 56);
+    flex:1;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+}
+
+@media (max-width: 768px) {
+    
+}

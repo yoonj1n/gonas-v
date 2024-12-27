@@ -1,0 +1,58 @@
+{
+  "name": "GONAS-V2_client",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@emotion/react": "^11.13.5",
+    "@emotion/styled": "^11.13.5",
+    "@mui/icons-material": "^5.16.8",
+    "@mui/material": "^6.1.9",
+    "@mui/x-date-pickers": "^7.22.3",
+    "@react-spring/web": "^9.7.5",
+    "@testing-library/jest-dom": "^5.14.1",
+    "@testing-library/react": "^13.0.0",
+    "@testing-library/user-event": "^13.2.1",
+    "@use-gesture/react": "^10.3.1",
+    "chroma-js": "^3.1.2",
+    "dayjs": "^1.11.13",
+    "forever": "^4.0.3",
+    "http-proxy-middleware": "^3.0.3",
+    "leaflet": "^1.9.4",
+    "leaflet-geotiff-2": "git+https://github.com/yoonj1n/leaflet-geotiff-geomodelweb.git",
+    "react": "^18.3.1",
+    "react-device-detect": "^2.2.3",
+    "react-dom": "^18.3.1",
+    "react-leaflet": "^4.2.1",
+    "react-router-dom": "^6.28.0",
+    "react-scripts": "5.0.1",
+    "web-vitals": "^2.1.0"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "forever_client": "yarn forever -a -l /home/webadmin/GONAS-V/log/client.log -m=10000 --minUpTime=1000 --spinSleepTime=1000 start -c \"yarn start\" ./"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "main": "index.js",
+  "author": "yoonjinchoi <choiyj@geosr.com>",
+  "license": "MIT"
+}
